@@ -1,0 +1,4 @@
+SELECT max(nilai) From tb_mahasiswa_nilai a
+JOIN tb_mahasiswa b ON a.mhs_id == b.mhs_id
+JOIN tb_matakuliah c ON a.mk_id == c.mk_id
+WHERE a.mk_id == 2
